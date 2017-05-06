@@ -9,10 +9,10 @@
 import UIKit
 import SQLite
 
-class SqlLogDriver: LogDriver {
+public class SqlLogDriver: LogDriver {
     // MARK - Public Properties
     public var didLog: DidLogCallback?
-    public var db:Connection
+    var db:Connection
     
     // MARK: - Data Definition
     private let logs = Table("logs")
@@ -25,12 +25,16 @@ class SqlLogDriver: LogDriver {
     private let createdAt = Expression<Int64>("created_at")
     private let order = Expression<Int64>("order_seq")
     
-    init?(logFile:String = "logs.sqlite3") {
+    public init?(logFile:String = "logs.sqlite3", inMemory:Bool = false) {
         let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last!
         let logFileUrl = documentDirectory.appendingPathComponent(logFile)
         
         do {
-            db = try Connection(logFileUrl.absoluteString)
+            if inMemory {
+                db = try Connection(.inMemory)
+            } else {
+                db = try Connection(logFileUrl.absoluteString)
+            }            
             try createDatabase()
         } catch {
             print("Backlogger: Can't create database \(error)")

@@ -9,7 +9,9 @@
 import Foundation
 
 public func debug(file:String = #file, line:UInt = #line, function:String = #function, message:String) {
+    #if DEBUG
     LogManager.shared.log(file: file, line: line, function: function, type: .debug, message: message)
+    #endif
 }
 
 public func info(file:String = #file, line:UInt = #line, function:String = #function, message:String) {

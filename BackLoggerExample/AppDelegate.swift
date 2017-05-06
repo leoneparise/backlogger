@@ -7,15 +7,24 @@
 //
 
 import UIKit
+import BackLogger
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
-
-
+    var window: UIWindow?    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if let sqlLogDriver = SqlLogDriver(), let consoleLogDriver = ConsoleLogDriver() {
+            #if DEBUG
+                LogManager.shared.drivers = [sqlLogDriver, consoleLogDriver]
+            #else
+                LogManager.shared.drivers = [consoleLogDriver]
+            #endif
+        }
+        
         return true
     }
 
