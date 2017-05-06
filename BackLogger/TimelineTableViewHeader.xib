@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <visualEffectView opaque="NO" contentMode="scaleToFill" id="AGc-Mm-XHN" customClass="TimelineTableViewHeader" customModule="Stump" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="276" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7Zg-Ib-btb">
+                <rect key="frame" x="0.0" y="0.0" width="276" height="57"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xb-cV-xcK" customClass="TimelineBulletView" customModule="Stump" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="44" height="57"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="9dm-cf-ptg"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="9os-xl-6YX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bulletColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="showBullet" value="YES"/>
+                            <userDefinedRuntimeAttribute type="size" keyPath="bulletSize">
+                                <size key="value" width="8" height="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUX-fU-yuA">
+                        <rect key="frame" x="30" y="18" width="238" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="7xb-cV-xcK" secondAttribute="bottom" id="6oe-1t-xu0"/>
+                    <constraint firstItem="qUX-fU-yuA" firstAttribute="leading" secondItem="7Zg-Ib-btb" secondAttribute="leading" constant="30" id="NmR-7J-FhC"/>
+                    <constraint firstItem="7xb-cV-xcK" firstAttribute="top" secondItem="7Zg-Ib-btb" secondAttribute="top" id="Vfc-kz-fBK"/>
+                    <constraint firstItem="7xb-cV-xcK" firstAttribute="leading" secondItem="7Zg-Ib-btb" secondAttribute="leading" id="iy5-4f-xYA"/>
+                    <constraint firstAttribute="trailing" secondItem="qUX-fU-yuA" secondAttribute="trailing" constant="8" id="qbs-7x-AZ5"/>
+                    <constraint firstItem="qUX-fU-yuA" firstAttribute="centerY" secondItem="7Zg-Ib-btb" secondAttribute="centerY" id="r0S-yu-AIB"/>
+                </constraints>
+            </view>
+            <blurEffect style="extraLight"/>
+            <connections>
+                <outlet property="bulletView" destination="7xb-cV-xcK" id="x61-dr-5ZW"/>
+                <outlet property="titleLabel" destination="qUX-fU-yuA" id="hq3-AQ-Epk"/>
+            </connections>
+            <point key="canvasLocation" x="-141" y="42.5"/>
+        </visualEffectView>
+    </objects>
+</document>
