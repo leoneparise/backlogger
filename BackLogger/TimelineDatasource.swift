@@ -30,11 +30,14 @@ public class TimelineDatasource:NSObject {
     public var willInsert: (() -> Void)?
     public var didInsert: (([Change]) -> Void)?
     
+    public var willAppend: (() -> Void)?
     public var didAppend: (([Change]) -> Void)?
+    
     public var configureCell: ((UITableViewCell, LogEntry) -> Void)?
     public var configureHeader: ((UIView, LogEntryGroup) -> Void)?
     
     public func prepend(entries:[LogEntry]) {
+        guard entries.count > 0 else { return }
         willInsert?()
         offset += entries.count
         let changes = entries.map(self.prepend)
@@ -42,6 +45,8 @@ public class TimelineDatasource:NSObject {
     }
     
     public func append(entries:[LogEntry]) {
+        guard entries.count > 0 else { return }
+        willAppend?()
         offset += entries.count
         let changes = entries.map(self.append)
         didAppend?(changes)

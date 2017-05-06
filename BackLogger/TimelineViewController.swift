@@ -15,7 +15,6 @@ public class TimelineViewController: UITableViewController {
     open var logFile:String = {
         return "logs.sqlite3"
     }()
-    open var fetchThreshold = 5
     
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -41,10 +40,6 @@ public class TimelineViewController: UITableViewController {
             entryCell.createdAt = entry.createdAt
         }
         
-        dataSource.didAppend = { [unowned self] _ in
-            self.tableView.reloadData()
-        }
-        
         dataSource.didSet = { [unowned self] _ in
             self.tableView.reloadData()
         }
@@ -59,6 +54,20 @@ public class TimelineViewController: UITableViewController {
                     self.tableView.insertSections([change.indexPath.section], with: .top)
                 }
                 self.tableView.insertRows(at: [change.indexPath], with: .top)
+            }
+            self.tableView.endUpdates()
+        }
+        
+        dataSource.willAppend = { [unowned self] in
+            self.tableView.beginUpdates()
+        }
+        
+        dataSource.didAppend = { [unowned self] changes in
+            for change in changes {
+                if change.createSection {
+                    self.tableView.insertSections([change.indexPath.section], with: .bottom)
+                }
+                self.tableView.insertRows(at: [change.indexPath], with: .bottom)
             }
             self.tableView.endUpdates()
         }
@@ -96,9 +105,10 @@ public class TimelineViewController: UITableViewController {
     
     public override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let (section, row) = (indexPath.section, indexPath.row)
+        let rowCount = dataSource.count(forSection: section)
         
-        if section - 1 == dataSource.count &&
-           row >= dataSource.count(forSection: section) - fetchThreshold,
+        if section >= max(0, (2 / 3) * dataSource.count)
+            && row >= max(0, (2 / 3) * rowCount),
            let logs = logManager.all(offset: dataSource.offset) {
             dataSource.append(entries: logs)
         }
