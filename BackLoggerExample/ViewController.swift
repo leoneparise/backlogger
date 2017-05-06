@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func infoTapped() {
-        info(message: "A info message")
+        info(message: "A info message. Let's try some multiline\nmessage to see\nwhat whe can do...\nsome\nmore\nlines...\n1)\n2)\n3)")
     }
         
     @IBAction func warnTapped() {

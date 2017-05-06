@@ -113,7 +113,20 @@ public class TimelineViewController: UITableViewController {
             dataSource.append(entries: logs)
         }
     }
+    
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
         
+        self.tableView.beginUpdates()
+        guard
+            let cell = tableView.cellForRow(at: indexPath) as? TimelineTableViewCellType
+        else { return }
+        
+        cell.expanded = !cell.expanded
+        
+        self.tableView.endUpdates()
+    }
+    
     @objc private func close() {
         if let nav = self.navigationController {
             nav.dismiss(animated: true, completion: nil)

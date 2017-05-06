@@ -8,12 +8,23 @@
 
 import UIKit
 
-public class TimelineTableViewCell: UITableViewCell {
+public protocol TimelineTableViewCellType:class {
+    var expanded:Bool { get set }
+}
+
+public class TimelineTableViewCell: UITableViewCell, TimelineTableViewCellType {
     @IBOutlet weak var typeLabel:LogTypeLabel!
     @IBOutlet weak var fileLabel:UILabel!
     @IBOutlet weak var lineLabel:UILabel!
     @IBOutlet weak var messageLabel:UILabel!
     @IBOutlet weak var dateLabel:UILabel!
+    
+    public var expanded:Bool = false {
+        didSet {
+            messageLabel.numberOfLines = expanded ? 0 : 2
+            self.setNeedsLayout()
+        }
+    }
     
     public var line:UInt? {
         didSet { lineLabel.text = line != nil ? "\(line!)" : "" }
@@ -24,7 +35,7 @@ public class TimelineTableViewCell: UITableViewCell {
     }
     
     public var file:String? {
-        didSet { fileLabel.text = file }
+        didSet { fileLabel.text = file != nil ? "\(file!):" : "" }
     }
     
     public var type:LogType = .debug {
