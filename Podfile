@@ -2,11 +2,13 @@
 platform :ios, '8.2'
 use_frameworks!
 
-pod 'SQLite.swift'
-pod 'SwiftDate'
-
 target 'BackLogger' do
+    pod 'SQLite.swift'
+    pod 'SwiftDate'
+end
 
+target 'BackLoggerUI' do
+    
 end
 
 target 'BackLoggerExample' do

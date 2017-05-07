@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BackLogger
 
 public protocol TimelineTableViewCellType:class {
     var expanded:Bool { get set }
@@ -19,10 +20,12 @@ public class TimelineTableViewCell: UITableViewCell, TimelineTableViewCellType {
     @IBOutlet weak var lineLabel:UILabel!
     @IBOutlet weak var messageLabel:UILabel!
     @IBOutlet weak var dateLabel:UILabel!
+    @IBOutlet weak var functionLabel:UILabel!
             
     public var expanded:Bool = false {
         didSet {
             messageLabel.numberOfLines = expanded ? 0 : 2
+            functionLabel.isHidden = !expanded
         }
     }
     
@@ -49,9 +52,7 @@ public class TimelineTableViewCell: UITableViewCell, TimelineTableViewCellType {
         didSet { dateLabel.text = String(format: "%02d", createdAt.second) }
     }
     
-    public override func awakeFromNib() {
-        messageLabel.setFadeTransition(withDurarion: 0.4)
-        
-        super.awakeFromNib()
-    }
+    public var function:String? {
+        didSet { functionLabel.text = function }
+    }    
 }

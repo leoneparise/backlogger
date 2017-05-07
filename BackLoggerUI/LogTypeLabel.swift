@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BackLogger
 
 extension LogType {
     var color:UIColor {

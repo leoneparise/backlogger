@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftDate
+import BackLogger
 
 public struct Change {
     public let indexPath:IndexPath

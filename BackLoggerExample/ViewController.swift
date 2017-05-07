@@ -8,6 +8,7 @@
 
 import UIKit
 import BackLogger
+import BackLoggerUI
 
 class ViewController: UIViewController {
     private var timer:Timer?

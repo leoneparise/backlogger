@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BackLogger
 
 public class TimelineViewController: UITableViewController {
     open var dataSource:TimelineDatasource!
@@ -38,6 +39,7 @@ public class TimelineViewController: UITableViewController {
             entryCell.line = entry.line
             entryCell.message = entry.message
             entryCell.createdAt = entry.createdAt
+            entryCell.function = entry.function
         }
         
         dataSource.didSet = { [unowned self] _ in
@@ -52,9 +54,6 @@ public class TimelineViewController: UITableViewController {
             for change in changes {
                 if change.createSection {
                     self.tableView.insertSections([change.indexPath.section], with: .top)
-                    if (change.indexPath.section + 1 <= self.dataSource.count) {
-                        self.tableView.reloadSections([change.indexPath.section + 1], with: .none)
-                    }
                 }
                 self.tableView.insertRows(at: [change.indexPath], with: .top)
             }
