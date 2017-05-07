@@ -3,10 +3,11 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'BackLoggerExample' do
-    pod 'BackLogger/Core', :path => '.'
+    pod 'BackLogger', :path => '.'
     pod 'BackLogger/UI', :path => '.'
 end
 
+# Enable to preview @IBDesignables inside BackLogger Pod
 post_install do |installer|
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|

@@ -1,4 +1,6 @@
 PODS:
+  - BackLogger (1.0.0):
+    - BackLogger/Core (= 1.0.0)
   - BackLogger/Core (1.0.0):
     - SQLite.swift
     - SwiftDate
@@ -10,7 +12,7 @@ PODS:
   - SwiftDate (4.1.1)
 
 DEPENDENCIES:
-  - BackLogger/Core (from `.`)
+  - BackLogger (from `.`)
   - BackLogger/UI (from `.`)
 
 EXTERNAL SOURCES:
@@ -22,6 +24,6 @@ SPEC CHECKSUMS:
   SQLite.swift: 99b36c22084427f0abbeb957556ce1528cf10bb3
   SwiftDate: ae615078806a322183e5f64e02e80ca8d939bf48
 
-PODFILE CHECKSUM: 00d17e17bc32fcf53311234ac2a289b196522ffd
+PODFILE CHECKSUM: c5c76d23498013ca2a3fd9b875c909ffc8ebad9b
 
 COCOAPODS: 1.2.1

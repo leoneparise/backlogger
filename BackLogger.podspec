@@ -21,7 +21,9 @@ Pod::Spec.new do |s|
   	ui.ios.deployment_target = '9.0'
     ui.source_files = 'BackLoggerUI/**/*.swift'    
     ui.resource = ['BackLoggerUI/**/*.xib']
-        
+
     ui.dependency 'BackLogger/Core'
   end
+
+  s.default_subspec = 'Core'
 end
