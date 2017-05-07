@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import BackLogger
 
 public class TimelineViewController: UITableViewController {
     open var dataSource:TimelineDatasource!

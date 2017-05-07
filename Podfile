@@ -1,18 +1,10 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '8.2'
+platform :ios, '9.0'
 use_frameworks!
 
-target 'BackLogger' do
-    pod 'SQLite.swift'
-    pod 'SwiftDate'
-end
-
-target 'BackLoggerUI' do
-    
-end
-
 target 'BackLoggerExample' do
-
+    pod 'BackLogger/Core', :path => '.'
+    pod 'BackLogger/UI', :path => '.'
 end
 
 post_install do |installer|

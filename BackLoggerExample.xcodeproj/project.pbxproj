@@ -8,79 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		3B90ED72EBC16F20C685C9D6 /* Pods_BackLoggerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0176899F1F44F96B1FF4A5D7 /* Pods_BackLoggerExample.framework */; };
-		44270171CE11C104717C06C1 /* Pods_BackLoggerUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58FECEA0CE9BD2AAB7373D8 /* Pods_BackLoggerUI.framework */; };
-		6FC0E2DFAB1C1E631CC7C614 /* Pods_BackLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC80D437B36F6405AF0FB2F2 /* Pods_BackLogger.framework */; };
-		B9D0587A1EBEC17B009D46F1 /* Sequence+RemoveNils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D058791EBEC17B009D46F1 /* Sequence+RemoveNils.swift */; };
-		B9D0587C1EBEC1A2009D46F1 /* LogEntryGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0587B1EBEC1A2009D46F1 /* LogEntryGroup.swift */; };
 		B9F14B571EBE79540099F37D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14B561EBE79540099F37D /* AppDelegate.swift */; };
 		B9F14B591EBE79540099F37D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14B581EBE79540099F37D /* ViewController.swift */; };
 		B9F14B5C1EBE79540099F37D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9F14B5A1EBE79540099F37D /* Main.storyboard */; };
 		B9F14B5E1EBE79540099F37D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F14B5D1EBE79540099F37D /* Assets.xcassets */; };
 		B9F14B611EBE79540099F37D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9F14B5F1EBE79540099F37D /* LaunchScreen.storyboard */; };
-		B9F14B711EBE79770099F37D /* BackLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = B9F14B6F1EBE79770099F37D /* BackLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9F14B741EBE79770099F37D /* BackLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F14B6D1EBE79770099F37D /* BackLogger.framework */; };
-		B9F14B751EBE79770099F37D /* BackLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9F14B6D1EBE79770099F37D /* BackLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9F14B8C1EBE7A3A0099F37D /* ConsoleLogDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14B7A1EBE7A3A0099F37D /* ConsoleLogDriver.swift */; };
-		B9F14B8D1EBE7A3A0099F37D /* LogDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14B7B1EBE7A3A0099F37D /* LogDriver.swift */; };
-		B9F14B8E1EBE7A3A0099F37D /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14B7C1EBE7A3A0099F37D /* LogEntry.swift */; };
-		B9F14B901EBE7A3A0099F37D /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14B7E1EBE7A3A0099F37D /* LogManager.swift */; };
-		B9F14B921EBE7A3A0099F37D /* Sequence+RemoveNils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14B801EBE7A3A0099F37D /* Sequence+RemoveNils.swift */; };
-		B9F14B931EBE7A3A0099F37D /* SqlLogDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14B811EBE7A3A0099F37D /* SqlLogDriver.swift */; };
-		B9F14BAF1EBEBFCE0099F37D /* BackLoggerUI.h in Headers */ = {isa = PBXBuildFile; fileRef = B9F14BAD1EBEBFCE0099F37D /* BackLoggerUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9F14BB21EBEBFCE0099F37D /* BackLoggerUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F14BAB1EBEBFCE0099F37D /* BackLoggerUI.framework */; };
-		B9F14BB31EBEBFCF0099F37D /* BackLoggerUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9F14BAB1EBEBFCE0099F37D /* BackLoggerUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9F14BB71EBEBFE30099F37D /* BackLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F14B6D1EBE79770099F37D /* BackLogger.framework */; };
-		B9F14BC41EBEC0420099F37D /* BackLoggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14BBA1EBEC0420099F37D /* BackLoggerViewController.swift */; };
-		B9F14BC51EBEC0420099F37D /* LogTypeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14BBB1EBEC0420099F37D /* LogTypeLabel.swift */; };
-		B9F14BC61EBEC0420099F37D /* TimelineBulletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14BBC1EBEC0420099F37D /* TimelineBulletView.swift */; };
-		B9F14BC71EBEC0420099F37D /* TimelineDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14BBD1EBEC0420099F37D /* TimelineDatasource.swift */; };
-		B9F14BC81EBEC0420099F37D /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14BBE1EBEC0420099F37D /* TimelineTableViewCell.swift */; };
-		B9F14BC91EBEC0420099F37D /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F14BBF1EBEC0420099F37D /* TimelineTableViewCell.xib */; };
-		B9F14BCA1EBEC0420099F37D /* TimelineTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14BC01EBEC0420099F37D /* TimelineTableViewHeader.swift */; };
-		B9F14BCB1EBEC0420099F37D /* TimelineTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F14BC11EBEC0420099F37D /* TimelineTableViewHeader.xib */; };
-		B9F14BCC1EBEC0420099F37D /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14BC21EBEC0420099F37D /* TimelineViewController.swift */; };
-		B9F14BCD1EBEC0420099F37D /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14BC31EBEC0420099F37D /* UIColor+Hex.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B9F14B721EBE79770099F37D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B9F14B4B1EBE79540099F37D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B9F14B6C1EBE79770099F37D;
-			remoteInfo = BackLogger;
-		};
-		B9F14BB01EBEBFCE0099F37D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B9F14B4B1EBE79540099F37D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B9F14BAA1EBEBFCE0099F37D;
-			remoteInfo = BackLoggerUI;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		B9F14B791EBE79770099F37D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B9F14B751EBE79770099F37D /* BackLogger.framework in Embed Frameworks */,
-				B9F14BB31EBEBFCF0099F37D /* BackLoggerUI.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0176899F1F44F96B1FF4A5D7 /* Pods_BackLoggerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackLoggerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		097AF2893C90F2EC1CD7C541 /* Pods-BackLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackLogger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BackLogger/Pods-BackLogger.debug.xcconfig"; sourceTree = "<group>"; };
-		38F3A1096CE8DCE8BEFCD95D /* Pods-BackLoggerUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackLoggerUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-BackLoggerUI/Pods-BackLoggerUI.release.xcconfig"; sourceTree = "<group>"; };
-		579E35046BFAA25F6ECFFCA8 /* Pods-BackLoggerUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackLoggerUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BackLoggerUI/Pods-BackLoggerUI.debug.xcconfig"; sourceTree = "<group>"; };
 		651A4D6218BB96AF07113E77 /* Pods-BackLoggerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackLoggerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-BackLoggerExample/Pods-BackLoggerExample.release.xcconfig"; sourceTree = "<group>"; };
-		B9D058791EBEC17B009D46F1 /* Sequence+RemoveNils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+RemoveNils.swift"; sourceTree = "<group>"; };
 		B9D0587B1EBEC1A2009D46F1 /* LogEntryGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEntryGroup.swift; sourceTree = "<group>"; };
 		B9F14B531EBE79540099F37D /* BackLoggerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackLoggerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F14B561EBE79540099F37D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +26,6 @@
 		B9F14B5D1EBE79540099F37D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9F14B601EBE79540099F37D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9F14B621EBE79540099F37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9F14B6D1EBE79770099F37D /* BackLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BackLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F14B6F1EBE79770099F37D /* BackLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackLogger.h; sourceTree = "<group>"; };
 		B9F14B701EBE79770099F37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9F14B7A1EBE7A3A0099F37D /* ConsoleLogDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogDriver.swift; sourceTree = "<group>"; };
@@ -98,7 +34,6 @@
 		B9F14B7E1EBE7A3A0099F37D /* LogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		B9F14B801EBE7A3A0099F37D /* Sequence+RemoveNils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+RemoveNils.swift"; sourceTree = "<group>"; };
 		B9F14B811EBE7A3A0099F37D /* SqlLogDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SqlLogDriver.swift; sourceTree = "<group>"; };
-		B9F14BAB1EBEBFCE0099F37D /* BackLoggerUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BackLoggerUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F14BAD1EBEBFCE0099F37D /* BackLoggerUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackLoggerUI.h; sourceTree = "<group>"; };
 		B9F14BAE1EBEBFCE0099F37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9F14BBA1EBEC0420099F37D /* BackLoggerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackLoggerViewController.swift; sourceTree = "<group>"; };
@@ -111,7 +46,6 @@
 		B9F14BC11EBEC0420099F37D /* TimelineTableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineTableViewHeader.xib; sourceTree = "<group>"; };
 		B9F14BC21EBEC0420099F37D /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		B9F14BC31EBEC0420099F37D /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
-		BE041614A082096F843CB64A /* Pods-BackLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackLogger.release.xcconfig"; path = "Pods/Target Support Files/Pods-BackLogger/Pods-BackLogger.release.xcconfig"; sourceTree = "<group>"; };
 		C72BF86CD372CF8EFFEB0EE2 /* Pods-BackLoggerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackLoggerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BackLoggerExample/Pods-BackLoggerExample.debug.xcconfig"; sourceTree = "<group>"; };
 		DC80D437B36F6405AF0FB2F2 /* Pods_BackLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58FECEA0CE9BD2AAB7373D8 /* Pods_BackLoggerUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackLoggerUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,26 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9F14B741EBE79770099F37D /* BackLogger.framework in Frameworks */,
 				3B90ED72EBC16F20C685C9D6 /* Pods_BackLoggerExample.framework in Frameworks */,
-				B9F14BB21EBEBFCE0099F37D /* BackLoggerUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B9F14B691EBE79770099F37D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6FC0E2DFAB1C1E631CC7C614 /* Pods_BackLogger.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B9F14BA71EBEBFCE0099F37D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9F14BB71EBEBFE30099F37D /* BackLogger.framework in Frameworks */,
-				44270171CE11C104717C06C1 /* Pods_BackLoggerUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,12 +66,8 @@
 		454D8FDEB2D880496A7EEDD5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				097AF2893C90F2EC1CD7C541 /* Pods-BackLogger.debug.xcconfig */,
-				BE041614A082096F843CB64A /* Pods-BackLogger.release.xcconfig */,
 				C72BF86CD372CF8EFFEB0EE2 /* Pods-BackLoggerExample.debug.xcconfig */,
 				651A4D6218BB96AF07113E77 /* Pods-BackLoggerExample.release.xcconfig */,
-				579E35046BFAA25F6ECFFCA8 /* Pods-BackLoggerUI.debug.xcconfig */,
-				38F3A1096CE8DCE8BEFCD95D /* Pods-BackLoggerUI.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -177,8 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				B9F14B531EBE79540099F37D /* BackLoggerExample.app */,
-				B9F14B6D1EBE79770099F37D /* BackLogger.framework */,
-				B9F14BAB1EBEBFCE0099F37D /* BackLoggerUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -274,7 +183,6 @@
 		B9F14BCE1EBEC04E0099F37D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B9D058791EBEC17B009D46F1 /* Sequence+RemoveNils.swift */,
 				B9F14BC31EBEC0420099F37D /* UIColor+Hex.swift */,
 			);
 			name = Extensions;
@@ -292,25 +200,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		B9F14B6A1EBE79770099F37D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9F14B711EBE79770099F37D /* BackLogger.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B9F14BA81EBEBFCE0099F37D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9F14BAF1EBEBFCE0099F37D /* BackLoggerUI.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		B9F14B521EBE79540099F37D /* BackLoggerExample */ = {
 			isa = PBXNativeTarget;
@@ -320,60 +209,17 @@
 				B9F14B4F1EBE79540099F37D /* Sources */,
 				B9F14B501EBE79540099F37D /* Frameworks */,
 				B9F14B511EBE79540099F37D /* Resources */,
-				B9F14B791EBE79770099F37D /* Embed Frameworks */,
 				825A4D1EC76CEA4150466E02 /* [CP] Embed Pods Frameworks */,
 				872315CB38A72C7B884C1138 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B9F14B731EBE79770099F37D /* PBXTargetDependency */,
-				B9F14BB11EBEBFCE0099F37D /* PBXTargetDependency */,
 			);
 			name = BackLoggerExample;
 			productName = BackLoggerExample;
 			productReference = B9F14B531EBE79540099F37D /* BackLoggerExample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		B9F14B6C1EBE79770099F37D /* BackLogger */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B9F14B761EBE79770099F37D /* Build configuration list for PBXNativeTarget "BackLogger" */;
-			buildPhases = (
-				E633D10F5671FC9F883C9213 /* [CP] Check Pods Manifest.lock */,
-				B9F14B681EBE79770099F37D /* Sources */,
-				B9F14B691EBE79770099F37D /* Frameworks */,
-				B9F14B6A1EBE79770099F37D /* Headers */,
-				B9F14B6B1EBE79770099F37D /* Resources */,
-				96DDFB9DB0E3046442C46196 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BackLogger;
-			productName = BackLogger;
-			productReference = B9F14B6D1EBE79770099F37D /* BackLogger.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B9F14BAA1EBEBFCE0099F37D /* BackLoggerUI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B9F14BB41EBEBFCF0099F37D /* Build configuration list for PBXNativeTarget "BackLoggerUI" */;
-			buildPhases = (
-				D156D366C067C1A5B95826CA /* [CP] Check Pods Manifest.lock */,
-				B9F14BA61EBEBFCE0099F37D /* Sources */,
-				B9F14BA71EBEBFCE0099F37D /* Frameworks */,
-				B9F14BA81EBEBFCE0099F37D /* Headers */,
-				B9F14BA91EBEBFCE0099F37D /* Resources */,
-				34400C171FE03F4A77C3B4C6 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BackLoggerUI;
-			productName = BackLoggerUI;
-			productReference = B9F14BAB1EBEBFCE0099F37D /* BackLoggerUI.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -388,18 +234,6 @@
 					B9F14B521EBE79540099F37D = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = QWZ3RYGB6Z;
-						ProvisioningStyle = Automatic;
-					};
-					B9F14B6C1EBE79770099F37D = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = QWZ3RYGB6Z;
-						LastSwiftMigration = 0830;
-						ProvisioningStyle = Automatic;
-					};
-					B9F14BAA1EBEBFCE0099F37D = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = QWZ3RYGB6Z;
-						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -418,8 +252,6 @@
 			projectRoot = "";
 			targets = (
 				B9F14B521EBE79540099F37D /* BackLoggerExample */,
-				B9F14B6C1EBE79770099F37D /* BackLogger */,
-				B9F14BAA1EBEBFCE0099F37D /* BackLoggerUI */,
 			);
 		};
 /* End PBXProject section */
@@ -435,40 +267,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9F14B6B1EBE79770099F37D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B9F14BA91EBEBFCE0099F37D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9F14BC91EBEC0420099F37D /* TimelineTableViewCell.xib in Resources */,
-				B9F14BCB1EBEC0420099F37D /* TimelineTableViewHeader.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		34400C171FE03F4A77C3B4C6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BackLoggerUI/Pods-BackLoggerUI-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		825A4D1EC76CEA4150466E02 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -499,52 +300,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BackLoggerExample/Pods-BackLoggerExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		96DDFB9DB0E3046442C46196 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BackLogger/Pods-BackLogger-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B92B1BB050F420D303BB6C7E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D156D366C067C1A5B95826CA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E633D10F5671FC9F883C9213 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -571,50 +327,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9F14B681EBE79770099F37D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9F14B8D1EBE7A3A0099F37D /* LogDriver.swift in Sources */,
-				B9F14B901EBE7A3A0099F37D /* LogManager.swift in Sources */,
-				B9F14B8C1EBE7A3A0099F37D /* ConsoleLogDriver.swift in Sources */,
-				B9F14B931EBE7A3A0099F37D /* SqlLogDriver.swift in Sources */,
-				B9F14B921EBE7A3A0099F37D /* Sequence+RemoveNils.swift in Sources */,
-				B9F14B8E1EBE7A3A0099F37D /* LogEntry.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B9F14BA61EBEBFCE0099F37D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9F14BC41EBEC0420099F37D /* BackLoggerViewController.swift in Sources */,
-				B9F14BCD1EBEC0420099F37D /* UIColor+Hex.swift in Sources */,
-				B9F14BCA1EBEC0420099F37D /* TimelineTableViewHeader.swift in Sources */,
-				B9D0587C1EBEC1A2009D46F1 /* LogEntryGroup.swift in Sources */,
-				B9D0587A1EBEC17B009D46F1 /* Sequence+RemoveNils.swift in Sources */,
-				B9F14BC71EBEC0420099F37D /* TimelineDatasource.swift in Sources */,
-				B9F14BC81EBEC0420099F37D /* TimelineTableViewCell.swift in Sources */,
-				B9F14BCC1EBEC0420099F37D /* TimelineViewController.swift in Sources */,
-				B9F14BC51EBEC0420099F37D /* LogTypeLabel.swift in Sources */,
-				B9F14BC61EBEC0420099F37D /* TimelineBulletView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B9F14B731EBE79770099F37D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B9F14B6C1EBE79770099F37D /* BackLogger */;
-			targetProxy = B9F14B721EBE79770099F37D /* PBXContainerItemProxy */;
-		};
-		B9F14BB11EBEBFCE0099F37D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B9F14BAA1EBEBFCE0099F37D /* BackLoggerUI */;
-			targetProxy = B9F14BB01EBEBFCE0099F37D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B9F14B5A1EBE79540099F37D /* Main.storyboard */ = {
@@ -759,108 +472,6 @@
 			};
 			name = Release;
 		};
-		B9F14B771EBE79770099F37D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 097AF2893C90F2EC1CD7C541 /* Pods-BackLogger.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = QWZ3RYGB6Z;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BackLogger/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leoneparise.BackLogger;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B9F14B781EBE79770099F37D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE041614A082096F843CB64A /* Pods-BackLogger.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = QWZ3RYGB6Z;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BackLogger/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leoneparise.BackLogger;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B9F14BB51EBEBFCF0099F37D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 579E35046BFAA25F6ECFFCA8 /* Pods-BackLoggerUI.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = QWZ3RYGB6Z;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BackLoggerUI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leoneparise.BackLoggerUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B9F14BB61EBEBFCF0099F37D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38F3A1096CE8DCE8BEFCD95D /* Pods-BackLoggerUI.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = QWZ3RYGB6Z;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BackLoggerUI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leoneparise.BackLoggerUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -878,24 +489,6 @@
 			buildConfigurations = (
 				B9F14B661EBE79540099F37D /* Debug */,
 				B9F14B671EBE79540099F37D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B9F14B761EBE79770099F37D /* Build configuration list for PBXNativeTarget "BackLogger" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B9F14B771EBE79770099F37D /* Debug */,
-				B9F14B781EBE79770099F37D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B9F14BB41EBEBFCF0099F37D /* Build configuration list for PBXNativeTarget "BackLoggerUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B9F14BB51EBEBFCF0099F37D /* Debug */,
-				B9F14BB61EBEBFCF0099F37D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

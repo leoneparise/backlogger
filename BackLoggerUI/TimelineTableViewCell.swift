@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import BackLogger
 
 public protocol TimelineTableViewCellType:class {
     var expanded:Bool { get set }

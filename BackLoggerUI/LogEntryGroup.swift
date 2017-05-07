@@ -8,7 +8,6 @@
 
 import Foundation
 import SwiftDate
-import BackLogger
 
 public struct LogEntryGroup {
     public let timestamp:Date
