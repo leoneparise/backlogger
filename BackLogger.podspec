@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform = :ios
 
   s.subspec 'Core' do |core|
-    core.source_files = 'BackLogger/**/*.swift'
+    core.source_files = 'BackLogger/*.swift'
     core.ios.deployment_target = '8.2'
 
     core.dependency 'SQLite.swift'
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'UI' do |ui|    
   	ui.ios.deployment_target = '9.0'
-    ui.source_files = 'BackLoggerUI/**/*.swift'    
+    ui.source_files = 'BackLoggerUI/*.swift'    
     ui.resource = ['BackLoggerUI/**/*.xib']
 
     ui.dependency 'BackLogger/Core'
