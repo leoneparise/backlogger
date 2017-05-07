@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/leoneparise/BackLogger.git', :tag => s.version }
   s.platform     = :ios
   s.default_subspec = 'Core'
+  s.ios.deployment_target = '8.2'
 
   s.subspec 'Core' do |core|
     core.source_files = 'BackLogger/*.swift'
-    core.ios.deployment_target = '8.2'
 
     core.dependency 'SQLite.swift'
     core.dependency 'SwiftDate'
