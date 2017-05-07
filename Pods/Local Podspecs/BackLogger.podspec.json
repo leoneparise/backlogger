@@ -14,16 +14,13 @@
     "tag": "1.0.0"
   },
   "platforms": {
-    "ios": null
+    "ios": "8.2"
   },
   "default_subspecs": "Core",
   "subspecs": [
     {
       "name": "Core",
       "source_files": "BackLogger/*.swift",
-      "platforms": {
-        "ios": "8.2"
-      },
       "dependencies": {
         "SQLite.swift": [
 
