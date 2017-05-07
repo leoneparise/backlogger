@@ -26,7 +26,7 @@ public func error(file:String = #file, line:UInt = #line, function:String = #fun
     LogManager.shared.log(file: file, line: line, function: function, type: .error, message: message)
 }
 
-extension Notification.Name {
+public extension Notification.Name {
     static let LogManagerDidLog = Notification.Name("LogManagerDidLog")
 }
 
