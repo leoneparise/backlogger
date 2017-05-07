@@ -18,22 +18,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="349" height="57.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJL-1u-4B8" customClass="TimelineBulletView" customModule="BackLogger" customModuleProvider="target">
-                        <rect key="frame" x="17" y="0.0" width="10" height="59"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="10" id="VZr-Uo-mHr"/>
-                        </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="showBullet" value="NO"/>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="isFirst" value="NO"/>
-                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWE-iP-MI5" customClass="LogTypeLabel" customModule="BackLogger" customModuleProvider="target">
-                        <rect key="frame" x="32" y="5" width="42" height="14"/>
+                        <rect key="frame" x="30" y="5" width="42" height="14"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="42" id="bce-wy-6sk"/>
@@ -44,31 +30,51 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="File" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXE-3t-Kmq" userLabel="File Label">
-                        <rect key="frame" x="82" y="3.5" width="25" height="18"/>
+                        <rect key="frame" x="80" y="3.5" width="25" height="18"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ga-nV-gTy" userLabel="Line Label">
-                        <rect key="frame" x="112" y="3.5" width="229" height="18"/>
+                        <rect key="frame" x="110" y="3.5" width="231" height="18"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8b-rT-vlD" userLabel="Log Label">
-                        <rect key="frame" x="39" y="26.5" width="302" height="23"/>
+                        <rect key="frame" x="37" y="26.5" width="304" height="23"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaN-wr-CLU">
-                        <rect key="frame" x="5" y="0.0" width="12" height="58"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="59" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaN-wr-CLU">
+                        <rect key="frame" x="0.0" y="0.0" width="16" height="58"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="12" id="tib-VS-hYy"/>
+                            <constraint firstAttribute="width" constant="16" id="tib-VS-hYy"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="9"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJL-1u-4B8" customClass="TimelineBulletView" customModule="BackLogger" customModuleProvider="target">
+                        <rect key="frame" x="19" y="0.0" width="6" height="59"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="VZr-Uo-mHr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="showBullet" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isFirst" value="NO"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="bulletSize">
+                                <size key="value" width="5" height="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bulletColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="LXE-3t-Kmq" firstAttribute="leading" secondItem="OWE-iP-MI5" secondAttribute="trailing" constant="8" id="3Me-Sa-hEi"/>
@@ -82,8 +88,8 @@
                     <constraint firstItem="r8b-rT-vlD" firstAttribute="top" secondItem="LXE-3t-Kmq" secondAttribute="bottom" constant="5" id="Ddo-sU-sTq"/>
                     <constraint firstItem="9Ga-nV-gTy" firstAttribute="leading" secondItem="LXE-3t-Kmq" secondAttribute="trailing" constant="5" id="DgE-gC-yIv"/>
                     <constraint firstItem="OWE-iP-MI5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="IfL-bD-WQT"/>
-                    <constraint firstItem="fJL-1u-4B8" firstAttribute="leading" secondItem="vaN-wr-CLU" secondAttribute="trailing" id="KHX-Mi-yw9"/>
-                    <constraint firstItem="vaN-wr-CLU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="N7a-JX-bIp"/>
+                    <constraint firstItem="fJL-1u-4B8" firstAttribute="leading" secondItem="vaN-wr-CLU" secondAttribute="trailing" constant="3" id="KHX-Mi-yw9"/>
+                    <constraint firstItem="vaN-wr-CLU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="N7a-JX-bIp"/>
                     <constraint firstAttribute="bottom" secondItem="r8b-rT-vlD" secondAttribute="bottom" constant="8" id="fLb-fg-wa7"/>
                     <constraint firstItem="9Ga-nV-gTy" firstAttribute="centerY" secondItem="LXE-3t-Kmq" secondAttribute="centerY" id="hg5-Bu-ubB"/>
                     <constraint firstItem="fJL-1u-4B8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="oGN-bj-tbl"/>
@@ -92,6 +98,7 @@
             </tableViewCellContentView>
             <inset key="separatorInset" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
+                <outlet property="bulletView" destination="fJL-1u-4B8" id="2bo-Kk-HQC"/>
                 <outlet property="dateLabel" destination="vaN-wr-CLU" id="Avf-wT-TZV"/>
                 <outlet property="fileLabel" destination="LXE-3t-Kmq" id="qzD-bo-6qc"/>
                 <outlet property="lineLabel" destination="9Ga-nV-gTy" id="Ra0-jY-5By"/>

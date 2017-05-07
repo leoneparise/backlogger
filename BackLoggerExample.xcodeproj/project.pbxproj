@@ -34,6 +34,7 @@
 		B9F14B9B1EBE7A3A0099F37D /* TimelineTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F14B891EBE7A3A0099F37D /* TimelineTableViewHeader.xib */; };
 		B9F14B9C1EBE7A3A0099F37D /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14B8A1EBE7A3A0099F37D /* TimelineViewController.swift */; };
 		B9F14B9D1EBE7A3A0099F37D /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14B8B1EBE7A3A0099F37D /* UIColor+Hex.swift */; };
+		B9F14BA51EBEB2330099F37D /* UILabel+FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F14BA41EBEB2330099F37D /* UILabel+FadeTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		B9F14B891EBE7A3A0099F37D /* TimelineTableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineTableViewHeader.xib; sourceTree = "<group>"; };
 		B9F14B8A1EBE7A3A0099F37D /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		B9F14B8B1EBE7A3A0099F37D /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		B9F14BA41EBEB2330099F37D /* UILabel+FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+FadeTransition.swift"; sourceTree = "<group>"; };
 		BE041614A082096F843CB64A /* Pods-BackLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackLogger.release.xcconfig"; path = "Pods/Target Support Files/Pods-BackLogger/Pods-BackLogger.release.xcconfig"; sourceTree = "<group>"; };
 		C72BF86CD372CF8EFFEB0EE2 /* Pods-BackLoggerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackLoggerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BackLoggerExample/Pods-BackLoggerExample.debug.xcconfig"; sourceTree = "<group>"; };
 		DC80D437B36F6405AF0FB2F2 /* Pods_BackLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +203,7 @@
 			children = (
 				B9F14B8B1EBE7A3A0099F37D /* UIColor+Hex.swift */,
 				B9F14B801EBE7A3A0099F37D /* Sequence+RemoveNils.swift */,
+				B9F14BA41EBEB2330099F37D /* UILabel+FadeTransition.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				B9F14B8E1EBE7A3A0099F37D /* LogEntry.swift in Sources */,
 				B9F14B9D1EBE7A3A0099F37D /* UIColor+Hex.swift in Sources */,
 				B9F14B971EBE7A3A0099F37D /* TimelineDatasource.swift in Sources */,
+				B9F14BA51EBEB2330099F37D /* UILabel+FadeTransition.swift in Sources */,
 				B9F14B961EBE7A3A0099F37D /* TimelineBulletView.swift in Sources */,
 				B9F14B9C1EBE7A3A0099F37D /* TimelineViewController.swift in Sources */,
 				B9F14B8F1EBE7A3A0099F37D /* LogEntryGroup.swift in Sources */,

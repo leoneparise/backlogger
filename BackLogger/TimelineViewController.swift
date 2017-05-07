@@ -52,6 +52,9 @@ public class TimelineViewController: UITableViewController {
             for change in changes {
                 if change.createSection {
                     self.tableView.insertSections([change.indexPath.section], with: .top)
+                    if (change.indexPath.section + 1 <= self.dataSource.count) {
+                        self.tableView.reloadSections([change.indexPath.section + 1], with: .none)
+                    }
                 }
                 self.tableView.insertRows(at: [change.indexPath], with: .top)
             }
@@ -118,6 +121,7 @@ public class TimelineViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: false)
         
         self.tableView.beginUpdates()
+        
         guard
             let cell = tableView.cellForRow(at: indexPath) as? TimelineTableViewCellType
         else { return }

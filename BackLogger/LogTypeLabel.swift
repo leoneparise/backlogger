@@ -8,29 +8,22 @@
 
 import UIKit
 
-fileprivate func configure(_ typeOrNil:LogType?) -> (UILabel) -> () {
-    guard let type = typeOrNil else { return { _ in } }
+extension LogType {
+    var color:UIColor {
+        switch self {
+        case .debug: return UIColor(hex: 0x3cb371)
+        case .info: return UIColor(hex: 0x0099cc)
+        case .warn: return UIColor(hex: 0xff9933)
+        case .error: return UIColor(hex: 0xdc143c)
+        }
+    }
     
-    switch type {
-    case .debug:
-        return { label in
-            label.text = "DEBUG"
-            label.backgroundColor = UIColor(hex: 0x3cb371)
-        }
-    case .info:
-        return { label in
-            label.text = "INFO"
-            label.backgroundColor = UIColor(hex: 0x0099cc)
-        }
-    case .warn:
-        return { label in
-            label.text = "WARN"
-            label.backgroundColor = UIColor(hex: 0xff9933)
-        }
-    case .error:
-        return { label in
-            label.text = "ERROR"
-            label.backgroundColor = UIColor(hex: 0xdc143c)
+    var name:String {
+        switch self {
+        case .debug: return "DEBUG"
+        case .info: return "INFO"
+        case .warn: return "WARN"
+        case .error: return "ERROR"
         }
     }
 }
@@ -39,7 +32,8 @@ fileprivate func configure(_ typeOrNil:LogType?) -> (UILabel) -> () {
 public class LogTypeLabel: UILabel {
     public var type:LogType? {
         didSet {
-            configure(self.type)(self)
+            self.text = type?.name
+            self.backgroundColor = type?.color
             setNeedsLayout()
         }
     }

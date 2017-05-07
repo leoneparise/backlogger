@@ -10,6 +10,25 @@ import UIKit
 
 @IBDesignable
 class TimelineBulletView: UIView {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        commonInit()
+    }
+    
+    private func commonInit() {
+        self.contentMode = .center
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.setNeedsDisplay()
+    }
+    
     // MARK: State
     @IBInspectable var isFirst:Bool = true {
         didSet { setNeedsDisplay() }
