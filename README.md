@@ -5,7 +5,7 @@ If you like background log manager, give us a ⭐️
 
 ## How it works
 
-![How it works](https://media.giphy.com/media/xUA7beWGXcSpAPMNEs/giphy.gif)
+![How it works](https://media.giphy.com/media/26FmQDKouh2j3z29i/giphy.gif)
 
 BackLogger is a simple log manager that uses a superfast SqlLite database to store your logs.
 
