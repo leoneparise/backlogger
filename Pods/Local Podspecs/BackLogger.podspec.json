@@ -11,16 +11,16 @@
   "summary": "Background Log Manager",
   "source": {
     "git": "https://github.com/leoneparise/BackLogger.git",
-    "tag": "v1.0.0"
+    "tag": "1.0.0"
   },
-  "default_subspecs": "Core",
   "platforms": {
     "ios": null
   },
+  "default_subspecs": "Core",
   "subspecs": [
     {
       "name": "Core",
-      "source_files": "BackLogger/**/*.swift",
+      "source_files": "BackLogger/*.swift",
       "platforms": {
         "ios": "8.2"
       },
@@ -31,17 +31,19 @@
         "SwiftDate": [
 
         ]
-      }
+      },
+      "frameworks": "Foundation"
     },
     {
       "name": "UI",
       "platforms": {
         "ios": "9.0"
       },
-      "source_files": "BackLoggerUI/**/*.swift",
+      "source_files": "BackLoggerUI/*.swift",
       "resources": [
         "BackLoggerUI/**/*.xib"
       ],
+      "frameworks": "UIKit",
       "dependencies": {
         "BackLogger/Core": [
 

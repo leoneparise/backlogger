@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  BackLogger: ca422a3cc5b7ff0bd29304629d43689d3473c18c
+  BackLogger: 8b0f3a625065c62bba82e226f0d405cc80f6191b
   SQLite.swift: 99b36c22084427f0abbeb957556ce1528cf10bb3
   SwiftDate: ae615078806a322183e5f64e02e80ca8d939bf48
 

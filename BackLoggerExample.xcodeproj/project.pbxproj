@@ -233,8 +233,7 @@
 				TargetAttributes = {
 					B9F14B521EBE79540099F37D = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = QWZ3RYGB6Z;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -449,11 +448,12 @@
 			baseConfigurationReference = C72BF86CD372CF8EFFEB0EE2 /* Pods-BackLoggerExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QWZ3RYGB6Z;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BackLoggerExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leoneparise.BackLoggerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -463,11 +463,12 @@
 			baseConfigurationReference = 651A4D6218BB96AF07113E77 /* Pods-BackLoggerExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QWZ3RYGB6Z;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BackLoggerExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leoneparise.BackLoggerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

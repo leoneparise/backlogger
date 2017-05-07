@@ -5,9 +5,9 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/leoneparise/BackLogger'
   s.authors      = { 'Tony Million' => 'leone.parise@gmail.com' }
   s.summary      = 'Background Log Manager'
-  s.source       = { :git => 'https://github.com/leoneparise/BackLogger.git', :tag => 'v1.0.0' }
-  s.default_subspecs = 'Core'
-  s.platform = :ios
+  s.source       = { :git => 'https://github.com/leoneparise/BackLogger.git', :tag => s.version }
+  s.platform     = :ios
+  s.default_subspec = 'Core'
 
   s.subspec 'Core' do |core|
     core.source_files = 'BackLogger/*.swift'
@@ -15,15 +15,15 @@ Pod::Spec.new do |s|
 
     core.dependency 'SQLite.swift'
     core.dependency 'SwiftDate'
+    core.framework  = "Foundation"
   end
 
   s.subspec 'UI' do |ui|    
   	ui.ios.deployment_target = '9.0'
     ui.source_files = 'BackLoggerUI/*.swift'    
     ui.resource = ['BackLoggerUI/**/*.xib']
+    ui.framework  = "UIKit"
 
     ui.dependency 'BackLogger/Core'
-  end
-
-  s.default_subspec = 'Core'
+  end  
 end
