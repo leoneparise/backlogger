@@ -1,0 +1,52 @@
+{
+  "name": "BackLogger",
+  "version": "1.0.0",
+  "license": {
+    "type": "MIT"
+  },
+  "homepage": "https://github.com/leoneparise/BackLogger",
+  "authors": {
+    "Tony Million": "leone.parise@gmail.com"
+  },
+  "summary": "Background Log Manager",
+  "source": {
+    "git": "https://github.com/leoneparise/BackLogger.git",
+    "tag": "v1.0.0"
+  },
+  "default_subspecs": "Core",
+  "platforms": {
+    "ios": null
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "BackLogger/**/*.swift",
+      "platforms": {
+        "ios": "8.2"
+      },
+      "dependencies": {
+        "SQLite.swift": [
+
+        ],
+        "SwiftDate": [
+
+        ]
+      }
+    },
+    {
+      "name": "UI",
+      "platforms": {
+        "ios": "9.0"
+      },
+      "source_files": "BackLoggerUI/**/*.swift",
+      "resources": [
+        "BackLoggerUI/**/*.xib"
+      ],
+      "dependencies": {
+        "BackLogger/Core": [
+
+        ]
+      }
+    }
+  ]
+}
