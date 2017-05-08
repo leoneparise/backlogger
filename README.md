@@ -1,5 +1,4 @@
-# Background Log Manager
-Did you like background log manager? Give a ⭐️
+# BackLogger is now iLog ➡️ https://github.com/leoneparise/iLog
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
